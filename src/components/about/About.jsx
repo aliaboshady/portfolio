@@ -4,7 +4,7 @@ import SectionHeading from '../SectionHeading';
 export default function About() {
   return (
     <motion.section
-      className="mx-5 mb-28 max-w-[45rem] text-center leading-8"
+      className="mx-5 mb-5 max-w-[45rem] text-center leading-8"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 0.35 }}
@@ -13,7 +13,7 @@ export default function About() {
         About me
       </SectionHeading>
 
-      <p className="mb-3">
+      <p>
         Hi, I{"'"}m Ali. I{"'"}m a computer engineer who{"'"}s passionate about
         making video games. I{"'"}ve been working with Unity and Unreal for a
         few years, mainly focusing on learning the engine and how to make games.
