@@ -1,21 +1,18 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
-import { useRef } from 'react';
+import { motion } from 'framer-motion';
 
 export default function Project({ project }) {
-  const ref = useRef(null);
-
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ['0 1', '1.33 1'],
-  });
-
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.3, 1]);
+  const projectAnimationVariants = {
+    initial: { opacity: 0.3, scale: 0.8 },
+    animate: { opacity: 1, scale: 1 },
+  };
 
   return (
     <motion.div
-      ref={ref}
-      style={{ scale: scaleProgress, opacity: opacityProgress }}
+      variants={projectAnimationVariants}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
       className="group sm:mb-8 last:mb-0 mb-3"
     >
       <div className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative hover:bg-gray-200 transition-all group-even:pl-8 rounded-lg">
