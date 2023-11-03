@@ -1,5 +1,6 @@
 import Divider from './Divider';
 import About from './about/About';
+import Experience from './experience/Experience';
 import Home from './home/Home';
 import Projects from './projects/Projects';
 import Skills from './skills/Skills';
@@ -14,6 +15,8 @@ export default function Layout() {
       <Projects />
       <Divider />
       <Skills />
+      <Divider />
+      <Experience />
     </main>
   );
 }
