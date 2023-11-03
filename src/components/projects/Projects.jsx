@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section>
       <SectionHeading>My Projects</SectionHeading>
-      <div>
+      <div className="sm:grid-cols-2 grid-cols grid gap-4">
         {projectsData.map((project, index) => (
           <Project project={project} key={index} />
         ))}
