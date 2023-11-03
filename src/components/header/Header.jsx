@@ -1,7 +1,16 @@
 import { motion } from 'framer-motion';
 import { links } from '../../../data/data';
+import { useActiveSection } from '../../contexts/activeSectionContext';
 
 export default function Header() {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSection();
+
+  function handleClick(name) {
+    setActiveSection(name);
+    setTimeOfLastClick(Date.now());
+  }
+
   return (
     <motion.header className="relative z-50">
       <motion.div
@@ -16,16 +25,30 @@ export default function Header() {
           {links.map((link) => (
             <motion.li
               key={link.hash}
-              className="h-3/4 flex items-center justify-center"
+              className="h-3/4 relative flex items-center justify-center"
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.3 }}
             >
               <a
                 href={link.hash}
-                className="hover:text-gray-950 flex items-center justify-center w-full p-3 transition-all duration-300"
+                onClick={() => handleClick(link.name)}
+                className={`hover:text-gray-950 flex items-center justify-center w-full p-3 transition-all duration-300 ${
+                  link.name === activeSection ? 'text-gray-950' : ''
+                }`}
               >
                 {link.name}
+                {link.name === activeSection && (
+                  <motion.span
+                    className="-z-10 absolute inset-0 bg-gray-200 rounded-full"
+                    layoutId="activeSection"
+                    transition={{
+                      type: 'spring',
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                  />
+                )}
               </a>
             </motion.li>
           ))}
