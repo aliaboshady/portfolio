@@ -2,6 +2,7 @@ import Divider from './Divider';
 import About from './about/About';
 import Home from './home/Home';
 import Projects from './projects/Projects';
+import Skills from './skills/Skills';
 
 export default function Layout() {
   return (
@@ -11,6 +12,8 @@ export default function Layout() {
       <About />
       <Divider />
       <Projects />
+      <Divider />
+      <Skills />
     </main>
   );
 }
