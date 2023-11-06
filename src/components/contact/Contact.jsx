@@ -1,8 +1,9 @@
 import { motion } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import useSectionInView from '../../hooks/useSectionInView';
 import SectionHeading from '../SectionHeading';
 import emailjs from '@emailjs/browser';
+import SubmitButton from './SubmitButton';
 
 export default function Contact() {
   const serviceID = 'service_dghdb8p';
@@ -12,31 +13,31 @@ export default function Contact() {
 
   const refSection = useSectionInView('Contact');
   const refForm = useRef();
+  const [submittingForm, setSubmittingForm] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
+    setSubmittingForm(true);
 
+    // Send to me
     emailjs
       .sendForm(serviceID, templateID_ToMe, refForm.current, publicKey)
       .then(
         (result) => {
-          console.log(result.text);
+          setSubmittingForm(false);
         },
         (error) => {
           console.log(error.text);
         }
       );
 
-    emailjs
-      .sendForm(serviceID, templateID_ToFormSender, refForm.current, publicKey)
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    //Send to form submitter
+    emailjs.sendForm(
+      serviceID,
+      templateID_ToFormSender,
+      refForm.current,
+      publicKey
+    );
   }
 
   return (
@@ -70,6 +71,7 @@ export default function Contact() {
           placeholder="Your full name"
           required
           maxLength={500}
+          disabled={setSubmittingForm}
           className="h-14 border-black/10 px-4 mb-3 border rounded-lg"
         />
         <input
@@ -78,6 +80,7 @@ export default function Contact() {
           placeholder="Your email address"
           required
           maxLength={500}
+          disabled={setSubmittingForm}
           className="h-14 border-black/10 px-4 border rounded-lg"
         />
         <textarea
@@ -85,17 +88,11 @@ export default function Contact() {
           placeholder="Your message"
           required
           maxLength={2000}
+          disabled={setSubmittingForm}
           className="h-52 border-black/10 p-4 my-3 border rounded-lg"
         />
-        <button
-          type="submit"
-          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all hover:scale-110 hover:bg-black"
-        >
-          Send{' '}
-          <span className="material-symbols-outlined group-hover:translate-x-4 text-lg transition-all">
-            send
-          </span>
-        </button>
+
+        <SubmitButton submittingForm={submittingForm} />
       </form>
     </motion.section>
   );
