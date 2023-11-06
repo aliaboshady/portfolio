@@ -1,7 +1,15 @@
+import { useActiveSection } from '../../contexts/activeSectionContext';
 import { IconGithub, IconLinkedIn } from '../../icons/Icons';
 import { motion } from 'framer-motion';
 
 export default function Socials() {
+  const { setActiveSection, setTimeOfLastClick } = useActiveSection();
+
+  function handleClickContactMe(name) {
+    setActiveSection(name);
+    setTimeOfLastClick(Date.now());
+  }
+
   return (
     <motion.div
       className="sm:flex-row flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium"
@@ -10,6 +18,7 @@ export default function Socials() {
       transition={{ delay: 0.2 }}
     >
       <a
+        onClick={() => handleClickContactMe('Contact')}
         href="#contact"
         className="px-7 hover:cursor-pointer hover:scale-110 active:scale-105 border-black/10 flex items-center gap-1 py-3 text-white transition-all bg-gray-900 border rounded-full outline-none"
       >
