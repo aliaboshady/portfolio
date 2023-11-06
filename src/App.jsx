@@ -1,6 +1,7 @@
 import Header from './components/header/Header';
 import Layout from '../src/components/Layout';
 import ActiveSectionContextProvider from './contexts/activeSectionContext';
+import { Toaster } from 'react-hot-toast';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <ActiveSectionContextProvider>
         <Header />
         <Layout />
+        <Toaster position="top-center" />
       </ActiveSectionContextProvider>
     </>
   );

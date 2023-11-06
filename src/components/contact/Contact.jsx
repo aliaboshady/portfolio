@@ -4,6 +4,7 @@ import useSectionInView from '../../hooks/useSectionInView';
 import SectionHeading from '../SectionHeading';
 import emailjs from '@emailjs/browser';
 import SubmitButton from './SubmitButton';
+import toast from 'react-hot-toast';
 
 export default function Contact() {
   const serviceID = 'service_dghdb8p';
@@ -24,10 +25,12 @@ export default function Contact() {
       .sendForm(serviceID, templateID_ToMe, refForm.current, publicKey)
       .then(
         (result) => {
+          toast.success('Form Submitted!');
           setSubmittingForm(false);
         },
         (error) => {
-          console.log(error.text);
+          toast.error('There was a problem submitting. Please try again.');
+          setSubmittingForm(false);
         }
       );
 
@@ -71,7 +74,7 @@ export default function Contact() {
           placeholder="Your full name"
           required
           maxLength={500}
-          disabled={setSubmittingForm}
+          disabled={submittingForm}
           className="h-14 border-black/10 px-4 mb-3 border rounded-lg"
         />
         <input
@@ -80,7 +83,7 @@ export default function Contact() {
           placeholder="Your email address"
           required
           maxLength={500}
-          disabled={setSubmittingForm}
+          disabled={submittingForm}
           className="h-14 border-black/10 px-4 border rounded-lg"
         />
         <textarea
@@ -88,7 +91,7 @@ export default function Contact() {
           placeholder="Your message"
           required
           maxLength={2000}
-          disabled={setSubmittingForm}
+          disabled={submittingForm}
           className="h-52 border-black/10 p-4 my-3 border rounded-lg"
         />
 
