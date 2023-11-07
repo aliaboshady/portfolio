@@ -12,7 +12,7 @@ export default function Avatar() {
           <img
             src="../../public/avatar.jpg"
             alt="Ali Aboshady"
-            className="h-32 w-32 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
+            className="h-48 w-48 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
           />
         </motion.div>
 
@@ -26,7 +26,7 @@ export default function Avatar() {
             stiffness: 200,
           }}
         >
-          <span className="absolute bottom-0 right-0 text-4xl">👋</span>
+          <span className="right-[140px] bottom-5 absolute text-4xl">👋</span>
         </motion.div>
       </div>
     </div>
