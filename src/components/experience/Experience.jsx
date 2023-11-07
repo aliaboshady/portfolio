@@ -44,8 +44,8 @@ export default function Experience() {
             icon={experience.icon}
             iconStyle={iconStyle}
           >
-            <h3 className="font-bold capitalize">{experience.title}</h3>
-            <p className="!mt-0 font-normal">{experience.location}</p>
+            <h3 className="text-xl font-bold capitalize">{experience.title}</h3>
+            <p className="!mt-0 font-normal italic">{experience.company}</p>
             <p className="!mt-1 !font-normal text-gray-700">
               {experience.description}
             </p>

@@ -27,28 +27,100 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
-    description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
+    title: 'Consultant Associate - Developer Graduate Programme',
+    company: 'InFor/Lighthouse Systems Ltd',
+    description: (
+      <span>
+        Worked on a <span className="font-bold">Shopfloor/MES Platform</span>.
+        Meet with clients to understand their needs and implement new wanted
+        features. Create <span className="font-bold">SQL</span> queries and
+        procedures insert and update data. Develop{' '}
+        <span className="font-bold">C#</span> scripts to make grid reports.
+      </span>
+    ),
+    icon: <span className="material-symbols-outlined">work</span>,
+    date: 'July 2022 - Present',
+  },
+  {
+    title: 'C++ Programmer',
+    company: 'Inspired Entertainment',
+    description: (
+      <span>
+        Developed casino games using <span className="font-bold">C++</span>{' '}
+        along with an <span className="font-bold">In-House Game Engine</span>.
+        Worked with other departments{' '}
+        <span className="font-bold">(Art, Design, Production, Test)</span> to
+        deliver high quality, graphically-rich games. Implemented solutions
+        which conform to <span className="font-bold">Architectural Design</span>{' '}
+        and <span className="font-bold">Market Specification</span>. Debugged
+        and fixed logical errors and bugs. Optimised games in terms of size and
+        speed.
+      </span>
+    ),
+    icon: <span className="material-symbols-outlined">work</span>,
+    date: 'Nov 2021 - June 2022',
+  },
+  {
+    title: 'Game Programmer - Internship',
+    company: 'Black Cat Entertainment',
+    description: (
+      <span>
+        Worked on a platformer game using{' '}
+        <span className="font-bold">Unity</span> engine and{' '}
+        <span className="font-bold">C#</span>. Designed{' '}
+        <span className="font-bold">Software Architecture</span> and came up
+        with solutions for implementation problems. Collaborated on ideas with
+        the design team and built{' '}
+        <span className="font-bold">Gameplay Mechanics</span> accordingly.
+        Created animations and constructed their state logic. Managed{' '}
+        <span className="font-bold">Git</span> repository and organized the team
+        {"'"}s branches.
+      </span>
+    ),
+    icon: <span className="material-symbols-outlined">work</span>,
+    date: 'Feb 2021 - Nov 2021',
+  },
+  {
+    title: "Master's in Data Science and Computational Intelligence",
+    company: 'Coventry University, Coventry, UK',
+    description: (
+      <span>
+        During my master{"'"}s in{' '}
+        <span className="font-bold">
+          Data Science and Computational Intelligence
+        </span>
+        , I gained expertise in{' '}
+        <span className="font-bold">Machine Learning</span>,{' '}
+        <span className="font-bold">Big Data Analytics</span>,{' '}
+        <span className="font-bold">Data Visualization</span>, and{' '}
+        <span className="font-bold">Statistical Analysis</span>. I applied these
+        skills in real-world projects, such as my graduation project, which
+        focused on <span className="font-bold">Human Action Recognition</span>.
+      </span>
+    ),
     icon: <span className="material-symbols-outlined">school</span>,
-    date: '2019',
+    date: '2020 - 2021',
   },
   {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
-    description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-    icon: <span className="material-symbols-outlined">work</span>,
-    date: '2019 - 2021',
-  },
-  {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: <span className="material-symbols-outlined">work</span>,
-    date: '2021 - present',
+    title: "Bachelor's in Computer Engineering",
+    company: 'Nile University, Cairo, Egypt',
+    description: (
+      <span className="text-base">
+        In my undergrad, I delved deeply into crucial concepts about{' '}
+        <span className="font-bold">Data Structures and Algorithms</span>. These
+        studies equipped me with a robust understanding of{' '}
+        <span className="font-bold">Software Engineering</span> principles,
+        demonstrated through many projects. We also took{' '}
+        <span className="font-bold">Computer Architecture</span>, which
+        broadened my comprehension of hardware functionality and allowed me to
+        link theoretical code implementation to its hardware execution. I also
+        had the pleasure of building a small{' '}
+        <span className="font-bold">Self-Driving Car</span> for my graduation
+        project.
+      </span>
+    ),
+    icon: <span className="material-symbols-outlined">school</span>,
+    date: '2014 - 2020',
   },
 ];
 
