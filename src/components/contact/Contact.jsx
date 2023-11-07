@@ -47,7 +47,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={refSection}
-      className="scroll-mt-28 sm:mb-40 mb-20 w-[min(100%, 38rem)] text-center flex flex-col items-center"
+      className="scroll-mt-20 mb-10 sm:mb-20 w-[min(100%, 38rem)] text-center flex flex-col items-center"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}

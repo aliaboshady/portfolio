@@ -10,7 +10,7 @@ export default function Home() {
     <section
       id="home"
       ref={ref}
-      className="mb-10 max-w-[50rem] text-center scroll-mt-96"
+      className="max-w-[50rem] text-center scroll-mt-96"
     >
       <Avatar />
       <Intro />

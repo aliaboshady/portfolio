@@ -23,7 +23,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="max-w-[53rem] scroll-mt-24 sm:scroll-mt-48 text-center"
     >
       <SectionHeading>My Skills</SectionHeading>
 
