@@ -85,7 +85,7 @@ export default function Contact() {
           required
           maxLength={500}
           disabled={submittingForm}
-          className="h-14 border-black/10 px-4 mt-6 mb-3 border rounded-lg"
+          className="h-14 border-black/20 px-4 mt-6 mb-3 border rounded-lg"
         />
         <input
           type="email"
@@ -94,7 +94,7 @@ export default function Contact() {
           required
           maxLength={500}
           disabled={submittingForm}
-          className="h-14 border-black/10 px-4 border rounded-lg"
+          className="h-14 border-black/20 px-4 border rounded-lg"
         />
         <textarea
           name="message"
@@ -102,7 +102,7 @@ export default function Contact() {
           required
           maxLength={2000}
           disabled={submittingForm}
-          className="h-52 border-black/10 p-4 my-3 border rounded-lg"
+          className="h-52 border-black/20 p-4 my-3 border rounded-lg"
         />
 
         <SubmitButton submittingForm={submittingForm} />

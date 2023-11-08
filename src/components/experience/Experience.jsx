@@ -8,12 +8,12 @@ import 'react-vertical-timeline-component/style.min.css';
 import { experiencesData } from '../../../data/data';
 
 export default function Experience() {
-  const ref = useSectionInView('Experience', 0.5);
+  const ref = useSectionInView('Experience', 0.2);
 
   const contentStyle = {
     background: '#F3F4F5',
     boxShadow: 'none',
-    border: '1px solid rgba(0, 0, 0, 0.05)',
+    border: '1px solid rgba(0, 0, 0, 0.1)',
     textAlign: 'left',
     padding: '1.3rem 2rem',
   };
