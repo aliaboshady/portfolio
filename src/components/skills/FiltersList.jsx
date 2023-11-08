@@ -2,7 +2,7 @@ import FilterButton from './FilterButton';
 
 export default function FiltersList({ onSelectFilter, activeButton }) {
   return (
-    <div className="w-fit flex flex-wrap justify-center gap-3 mb-10">
+    <div className="w-fit flex flex-wrap justify-center gap-3 mx-2 mb-10">
       <FilterButton activeButton={activeButton} onClick={onSelectFilter}>
         All
       </FilterButton>

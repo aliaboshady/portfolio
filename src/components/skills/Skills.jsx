@@ -19,7 +19,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={refSection}
-      className="flex flex-col max-w-[53rem] scroll-mt-24 sm:scroll-mt-48 text-center items-center"
+      className="flex flex-col max-w-[53rem] scroll-mt-24 sm:scroll-mt-[8rem] text-center items-center transition-all"
     >
       <SectionHeading>My Skills</SectionHeading>
       <p ref={refSkillsList} className="mb-6 -mt-6 text-gray-700">
