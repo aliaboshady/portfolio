@@ -163,22 +163,43 @@ export const projectsData = [
 ];
 
 export const skillsData = {
-  languages: ['C', 'C++', 'C#', 'Python', 'Java', 'JavaScript'],
-  webdev: ['HTML', 'CSS', 'JavaScript', 'React'],
-  gamedev: [
-    'Phaser',
-    'Unity',
-    'Unreal',
-    'ARcore',
-    'Pygame',
-    'Online Multiplayer',
-  ],
-  artificialintelligence: ['Scikit-Learn', 'Keras', 'OpenCv'],
-  backend: ['SQL Server'],
-  versioncontrol: ['Git', 'Sourcetree'],
-  programmingconcepts: [
-    'Object Oriented Programming',
-    'Data Structures',
-    'Design Patterns',
-  ],
+  languages: {
+    color: 'red',
+    skills: ['C', 'C++', 'C#', 'Python', 'Java', 'JavaScript'],
+  },
+  webdev: {
+    color: 'blue',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+  },
+  gamedev: {
+    color: 'yellow',
+    skills: [
+      'Phaser',
+      'Unity',
+      'Unreal',
+      'ARcore',
+      'Pygame',
+      'Online Multiplayer',
+    ],
+  },
+  artificialintelligence: {
+    color: 'gray',
+    skills: ['Scikit-Learn', 'Keras', 'OpenCv'],
+  },
+  backend: {
+    color: 'green',
+    skills: ['SQL Server'],
+  },
+  versioncontrol: {
+    color: 'orange',
+    skills: ['Git', 'Sourcetree'],
+  },
+  programmingconcepts: {
+    color: 'pink',
+    skills: [
+      'Object Oriented Programming',
+      'Data Structures',
+      'Design Patterns',
+    ],
+  },
 };

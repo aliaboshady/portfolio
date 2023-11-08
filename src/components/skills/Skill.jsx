@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-export default function Skill({ skill, index }) {
+export default function Skill({ skill, color, index }) {
   const delayBetweenEachSkill = 0.05;
   const delayBeforeAnimationStart = 0.25;
 
@@ -18,7 +18,7 @@ export default function Skill({ skill, index }) {
   return (
     <motion.li
       key={index}
-      className="border-black/10 rounded-xl px-5 py-3 bg-white border"
+      className={`border-${color}-500/50 border-2 rounded-xl px-5 py-3 bg-white`}
       variants={fadeInAnimationVariants}
       initial="initial"
       whileInView="animate"
