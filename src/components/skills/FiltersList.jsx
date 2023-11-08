@@ -2,7 +2,7 @@ import FilterButton from './FilterButton';
 
 export default function FiltersList({ onSelectFilter }) {
   return (
-    <div className="flex flex-wrap justify-center gap-2 mb-10">
+    <div className="w-fit flex flex-wrap justify-center gap-2 mb-10">
       <FilterButton onClick={onSelectFilter}>All</FilterButton>
 
       <FilterButton onClick={onSelectFilter} color="red">

@@ -16,7 +16,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={ref}
-      className="max-w-[53rem] scroll-mt-24 sm:scroll-mt-48 text-center"
+      className="flex flex-col max-w-[53rem] scroll-mt-24 sm:scroll-mt-48 text-center items-center"
     >
       <SectionHeading>My Skills</SectionHeading>
       <FiltersList onSelectFilter={handleFilterClick} />

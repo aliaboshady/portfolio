@@ -5,7 +5,7 @@ export default function FilterButton({ children, onClick, color }) {
 
   return (
     <button
-      onClick={() => onClick(children)}
+      onClick={() => onClick(children.replace(/\s/g, '').toLowerCase())}
       className={`min-w-fit w-16 p-2 border rounded-md ${textColor} ${borderColor} ${backgroundColor}`}
     >
       {children}
