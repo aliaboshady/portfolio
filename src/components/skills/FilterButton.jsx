@@ -1,12 +1,23 @@
-export default function FilterButton({ children, onClick, color }) {
-  const borderColor = 'border-' + color + '-500';
+export default function FilterButton({
+  children,
+  onClick,
+  color,
+  activeButton,
+}) {
+  const filterName = children.replace(/\s/g, '').toLowerCase();
+  const borderColor =
+    color === undefined ? 'border-black/[0.20]' : 'border-' + color + '-500';
   const backgroundColor = 'bg-' + color + '-500';
   const textColor = color === undefined ? 'text-black' : 'text-white';
+  const scale = activeButton === filterName ? 'scale-[1.10]' : '';
+  const opacity = activeButton === filterName ? '' : 'opacity-50';
+  const hoverOpacity =
+    activeButton === filterName ? 'hover:opacity-100' : 'hover:opacity-80';
 
   return (
     <button
-      onClick={() => onClick(children.replace(/\s/g, '').toLowerCase())}
-      className={`min-w-fit w-16 p-2 border rounded-md ${textColor} ${borderColor} ${backgroundColor}`}
+      onClick={() => onClick(filterName)}
+      className={`min-w-fit w-16 p-2 rounded-md border-[3px] transition-all ${hoverOpacity} ${opacity} ${scale} ${textColor} ${borderColor} ${backgroundColor}`}
     >
       {children}
     </button>

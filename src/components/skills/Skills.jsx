@@ -19,7 +19,7 @@ export default function Skills() {
       className="flex flex-col max-w-[53rem] scroll-mt-24 sm:scroll-mt-48 text-center items-center"
     >
       <SectionHeading>My Skills</SectionHeading>
-      <FiltersList onSelectFilter={handleFilterClick} />
+      <FiltersList onSelectFilter={handleFilterClick} activeButton={filter} />
       <SkillsList filter={filter} />
     </section>
   );
