@@ -169,18 +169,19 @@ export const skillsData = {
   },
   webdev: {
     color: 'blue',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    skills: [
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'React',
+      'Tailwind',
+      'Redux',
+      'Framer-Motion',
+    ],
   },
   gamedev: {
     color: 'yellow',
-    skills: [
-      'Phaser',
-      'Unity',
-      'Unreal',
-      'ARcore',
-      'Pygame',
-      'Online Multiplayer',
-    ],
+    skills: ['Phaser', 'Unity', 'Unreal', 'ARcore', 'Pygame'],
   },
   artificialintelligence: {
     color: 'gray',
@@ -188,7 +189,7 @@ export const skillsData = {
   },
   backend: {
     color: 'green',
-    skills: ['SQL Server'],
+    skills: ['SQL Server', 'Supabase'],
   },
   versioncontrol: {
     color: 'orange',
