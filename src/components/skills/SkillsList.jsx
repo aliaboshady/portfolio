@@ -1,7 +1,7 @@
 import { skillsData } from '../../../data/data';
 import Skill from './Skill';
 
-export default function SkillsList({ filter }) {
+export default function SkillsList({ filter, inView }) {
   let skillsWithColor = [];
 
   // Getting all skills that are going to be shown
@@ -50,6 +50,7 @@ export default function SkillsList({ filter }) {
           color={skill.color}
           index={index}
           key={index}
+          inView={inView}
         />
       ))}
     </ul>

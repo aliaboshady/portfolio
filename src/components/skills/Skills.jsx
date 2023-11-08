@@ -1,12 +1,15 @@
 import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import useSectionInView from '../../hooks/useSectionInView';
 import SectionHeading from '../SectionHeading';
 import FiltersList from './FiltersList';
 import SkillsList from './SkillsList';
 
 export default function Skills() {
-  const ref = useSectionInView('Skills');
+  const refSection = useSectionInView('Skills');
   const [filter, setFilter] = useState('all');
+
+  const { ref: refSkillsList, inView } = useInView({ threshold: 0.75 });
 
   function handleFilterClick(newFilter) {
     setFilter(newFilter);
@@ -15,15 +18,15 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      ref={ref}
+      ref={refSection}
       className="flex flex-col max-w-[53rem] scroll-mt-24 sm:scroll-mt-48 text-center items-center"
     >
       <SectionHeading>My Skills</SectionHeading>
-      <p className="mb-6 -mt-6 text-gray-700">
+      <p ref={refSkillsList} className="mb-6 -mt-6 text-gray-700">
         Filter skills by clicking on the buttons bellow!
       </p>
       <FiltersList onSelectFilter={handleFilterClick} activeButton={filter} />
-      <SkillsList filter={filter} />
+      <SkillsList filter={filter} inView={inView} />
     </section>
   );
 }

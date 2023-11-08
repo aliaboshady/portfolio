@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
-export default function Skill({ skill, color, index }) {
+export default function Skill({ skill, color, index, inView }) {
+  const [hasAnimated, setHasAnimated] = useState(false);
   const delayBetweenEachSkill = 0.05;
   const delayBeforeAnimationStart = 0.25;
 
@@ -21,8 +23,10 @@ export default function Skill({ skill, color, index }) {
       className={`border-${color}-500/50 border-2 rounded-xl px-5 py-3 bg-white`}
       variants={fadeInAnimationVariants}
       initial="initial"
-      whileInView="animate"
-      viewport={{ once: true }}
+      animate={!inView && !hasAnimated ? 'initial' : 'animate'}
+      onAnimationComplete={(animationName) => {
+        if (animationName === 'animate') setHasAnimated(true);
+      }}
       transition={{
         delay: delayBetweenEachSkill * index + delayBeforeAnimationStart,
       }}
