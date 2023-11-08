@@ -20,15 +20,15 @@ export default function FiltersList({ onSelectFilter, activeButton }) {
         onClick={onSelectFilter}
         color="blue"
       >
-        Web Dev
+        Front End
       </FilterButton>
 
       <FilterButton
         activeButton={activeButton}
         onClick={onSelectFilter}
-        color="yellow"
+        color="green"
       >
-        Game Dev
+        Back End
       </FilterButton>
 
       <FilterButton
@@ -42,9 +42,9 @@ export default function FiltersList({ onSelectFilter, activeButton }) {
       <FilterButton
         activeButton={activeButton}
         onClick={onSelectFilter}
-        color="green"
+        color="yellow"
       >
-        Backend
+        Game Dev
       </FilterButton>
 
       <FilterButton

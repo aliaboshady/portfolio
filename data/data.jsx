@@ -167,7 +167,7 @@ export const skillsData = {
     color: 'red',
     skills: ['C', 'C++', 'C#', 'Python', 'Java', 'JavaScript'],
   },
-  webdev: {
+  frontend: {
     color: 'blue',
     skills: [
       'HTML',
@@ -179,17 +179,18 @@ export const skillsData = {
       'Framer-Motion',
     ],
   },
-  gamedev: {
-    color: 'yellow',
-    skills: ['Phaser', 'Unity', 'Unreal', 'ARcore', 'Pygame'],
+
+  backend: {
+    color: 'green',
+    skills: ['SQL Server', 'Supabase'],
   },
   artificialintelligence: {
     color: 'gray',
     skills: ['Scikit-Learn', 'Keras', 'OpenCv'],
   },
-  backend: {
-    color: 'green',
-    skills: ['SQL Server', 'Supabase'],
+  gamedev: {
+    color: 'yellow',
+    skills: ['Phaser', 'Unity', 'Unreal', 'ARcore', 'Pygame'],
   },
   versioncontrol: {
     color: 'orange',
