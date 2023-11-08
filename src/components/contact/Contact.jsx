@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
+import { Tooltip } from 'react-tooltip';
 import useSectionInView from '../../hooks/useSectionInView';
 import SectionHeading from '../SectionHeading';
 import emailjs from '@emailjs/browser';
@@ -57,8 +58,17 @@ export default function Contact() {
 
       <p className="-mt-6 text-gray-700">
         Please contact me directly at{' '}
-        <a href="mailto:ali_aboshady@hotmail.com" className="underline">
+        <a
+          href="mailto:ali_aboshady@hotmail.com"
+          data-tooltip-id="email-tooltip"
+          data-tooltip-content="Click to copy email address and open email client"
+          onClick={() =>
+            navigator.clipboard.writeText('ali_aboshady@hotmail.com')
+          }
+          className="underline-offset-[5px] underline"
+        >
           ali_aboshady@hotmail.com
+          <Tooltip id="email-tooltip" place="bottom" />
         </a>{' '}
         or through this form.
       </p>
