@@ -167,7 +167,7 @@ export const skillsData = {
     color: 'red',
     skills: ['C', 'C++', 'C#', 'Python', 'Java', 'JavaScript'],
   },
-  frontend: {
+  front_end: {
     color: 'blue',
     skills: [
       'HTML',
@@ -180,28 +180,39 @@ export const skillsData = {
     ],
   },
 
-  backend: {
+  back_end: {
     color: 'green',
     skills: ['SQL Server', 'Supabase'],
   },
-  artificialintelligence: {
+  artificial_intelligence: {
     color: 'gray',
     skills: ['Scikit-Learn', 'Keras', 'OpenCv'],
   },
-  gamedev: {
+  game_dev: {
     color: 'yellow',
-    skills: ['Phaser', 'Unity', 'Unreal', 'ARcore', 'Pygame'],
+    skills: [
+      'Phaser',
+      'Unity',
+      'Unreal',
+      'ARcore',
+      'Pygame',
+      'Online Multiplayer',
+    ],
   },
-  versioncontrol: {
+  version_control: {
     color: 'orange',
     skills: ['Git', 'Sourcetree'],
   },
-  programmingconcepts: {
+  programming_concepts: {
     color: 'pink',
     skills: [
       'Object Oriented Programming',
       'Data Structures',
       'Design Patterns',
     ],
+  },
+  app_dev: {
+    color: 'purple',
+    skills: ['Dart', 'Flutter'],
   },
 };

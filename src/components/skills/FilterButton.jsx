@@ -4,7 +4,7 @@ export default function FilterButton({
   color,
   activeButton,
 }) {
-  const filterName = children.replace(/\s/g, '').toLowerCase();
+  const filterName = children.replace(' ', '_').toLowerCase();
   const borderColor =
     color === undefined ? 'border-black/[0.20]' : 'border-' + color + '-500';
   const backgroundColor = 'bg-' + color + '-500';
