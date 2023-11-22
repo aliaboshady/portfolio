@@ -19,16 +19,14 @@ export default function About() {
       </SectionHeading>
 
       <p>
-        Hi, I{"'"}m Ali. I{"'"}m a computer engineer who{"'"}s passionate about
-        making video games. I{"'"}ve been working with Unity and Unreal for a
-        few years, mainly focusing on learning the engine and how to make games.
-        Now, I{"'"}m learning software design patterns and test driven
-        development to help me improve code readability, scalability, and
-        refactoring. I{"'"}m also interested in artificial intelligence, which
-        includes machine learning, deep learning, computer vision, and so on.
-        And I actually used some of these concepts in games, like in Flappy Bird
-        that you{"'"}ll see in the {"'"}Recent Work{"'"} section. Feel free to
-        hit me up with questions or comments, or just to chat!
+        I{"'"}m an innovative computer engineer driven by a relentless pursuit
+        of knowledge in cutting-edge technologies. With my expertise spanning
+        game, web, and app development, I have a rich portfolio demonstrating my
+        talents. Not limited to just that, I bring hands-on experience in
+        machine learning, deep learning, and computer vision to the table. What
+        sets me apart is my dedication to continuous improvement, particularly
+        in mastering software design patterns and test-driven development, which
+        results in code that is highly readable, scalable, and easily adaptable.
       </p>
     </motion.section>
   );

@@ -56,7 +56,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact Me</SectionHeading>
 
-      <p className="-mt-6 text-gray-700">
+      <p className="sm:mx-0 mx-3 -mt-6 text-gray-700">
         Please contact me directly at{' '}
         <a
           href="mailto:ali_aboshady@hotmail.com"
