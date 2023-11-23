@@ -140,18 +140,18 @@ export const projectsData = [
     imageName: 'munchNtime.png',
   },
   {
-    title: 'WildOasis',
+    title: 'Starry Oasis',
     description:
       'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
     tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageName: 'WildOasis.png',
+    imageName: 'StarryOasis.png',
   },
   {
-    title: 'Pizza',
+    title: 'Saucy Slice',
     description:
       'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
     tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-    imageName: 'Pizza.png',
+    imageName: 'SaucySlice.png',
   },
   {
     title: 'WorldWise',
