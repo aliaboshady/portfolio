@@ -6,8 +6,8 @@ export default function FilterButton({
 }) {
   const filterName = children.replace(' ', '_').toLowerCase();
   const borderColor =
-    color === undefined ? 'border-black/[0.20]' : 'border-' + color + '-500';
-  const backgroundColor = 'bg-' + color + '-500';
+    color === undefined ? 'border-black/[0.20]' : `border-${color}-500`;
+  const backgroundColor = color === undefined ? 'bg-white' : `bg-${color}-500`;
   const textColor = color === undefined ? 'text-black' : 'text-white';
   const scale = activeButton === filterName ? 'scale-[1.10]' : 'scale-[1]';
   const opacity = activeButton === filterName ? 'opacity-100' : 'opacity-50';
