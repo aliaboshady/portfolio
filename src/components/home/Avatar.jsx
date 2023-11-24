@@ -10,7 +10,7 @@ export default function Avatar() {
           transition={{ duration: 0.3 }}
         >
           <img
-            src="../../public/avatar.jpg"
+            src="/avatar.jpg"
             alt="Ali Aboshady"
             className="h-48 w-48 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
           />
