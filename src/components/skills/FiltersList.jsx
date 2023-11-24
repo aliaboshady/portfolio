@@ -27,7 +27,7 @@ export default function FiltersList({ onSelectFilter, activeButton }) {
           key={filter.name}
           activeButton={activeButton}
           onClick={onSelectFilter}
-          color={filter.color}
+          // color={filter.color}
         >
           {filter.name}
         </FilterButton>
