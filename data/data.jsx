@@ -128,37 +128,56 @@ export const projectsData = [
   {
     title: 'Amazon',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
+      'This is a simple Amazon clone, made using only HTML, CSS, and vanilla JavaScript. It has basic functionalities like adding items to cart, going to checkout, and placing an order!',
+    tags: ['HTML', 'CSS', 'JavaScript'],
     imageName: 'Amazon.png',
+    link: 'https://amazon-aliaboshady.netlify.app/',
   },
   {
     title: 'munchNtime',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
+      'munchNtime is a movie review app. You can search for any movie and review it by giving it a number of stars. It also tells you some info about the movies, like IMDB ratings and movie length.',
+    tags: ['React', 'JavaScript', 'CSS'],
     imageName: 'munchNtime.png',
-  },
-  {
-    title: 'Starry Oasis',
-    description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-    imageName: 'StarryOasis.png',
+    link: 'https://munchntime.netlify.app/',
   },
   {
     title: 'Saucy Slice',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
+      'This app is for pizza lovers. You can order any ammount of pizza and place an order. You also get an order number, which you can use to track your order later!',
+    tags: ['React', 'JavaScript', 'React Router', 'Tailwind', 'Redux'],
     imageName: 'SaucySlice.png',
+    link: 'https://saucy-slice.netlify.app/',
+  },
+  {
+    title: 'Starry Oasis',
+    description:
+      'Hotel app used for managing guests bookings. You can see all the bookings and their status. You can sort them a few different ways. You can also see the cabins, add, edit, and remove them, and set their info.',
+    tags: [
+      'React',
+      'SupaBase',
+      'JavaScript',
+      'React Query',
+      'React Router',
+      'Styled Components',
+    ],
+    imageName: 'StarryOasis.png',
+    link: 'https://starry-oasis.netlify.app/',
   },
   {
     title: 'City Stamp',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
+      'This is for adventurers! Keep a log of all the places you travelled, by clicking on the map and saving the city. You can also click on the city and go to its own Wikipedia page for more info!',
+    tags: [
+      'React',
+      'SupaBase',
+      'Tailwind',
+      'JavaScript',
+      'Leaflet Map',
+      'React Router',
+    ],
     imageName: 'CityStamp.png',
+    link: 'https://city-stamp.netlify.app/',
   },
 ];
 
