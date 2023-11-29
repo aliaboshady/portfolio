@@ -30,7 +30,7 @@ export default function Socials() {
         </a>
 
         <a
-          href="../../../data/CV.pdf"
+          href="CV.pdf"
           download="Ali Aboshady - CV.pdf"
           className="px-7 hover:cursor-pointer hover:scale-110 active:scale-105 hover:shadow-md hover:mx-2 border-black/10 flex items-center gap-1 py-3 transition-all bg-white border rounded-full outline-none"
         >
