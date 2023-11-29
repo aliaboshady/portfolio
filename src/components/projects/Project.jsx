@@ -37,7 +37,7 @@ export default function Project({ project }) {
           </div>
 
           <img
-            className="top-20 sm:-right-[14rem] -right-28 absolute w-[32rem] transition-all rounded shadow-2xl group-hover:shadow-[0_100px_100px_-15px_rgba(0,0,0,0.3)] group-hover:scale-[1.04] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 -z-10 opacity-40 sm:opacity-100"
+            className="top-20 sm:-right-[14rem] -right-28 absolute w-[32rem] transition-all duration-200 rounded shadow-2xl group-hover:shadow-[0_100px_100px_-15px_rgba(0,0,0,0.3)] group-hover:scale-[1.15] group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 -z-10 opacity-40 sm:opacity-100"
             src={`/project_images/${project.imageName}`}
             alt={project.title}
           />
