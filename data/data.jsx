@@ -28,7 +28,7 @@ export const links = [
 export const experiencesData = [
   {
     title: 'Consultant Associate - Developer Graduate Programme',
-    company: 'InFor/Lighthouse Systems Ltd',
+    company: 'InFor/Lighthouse Systems Ltd, Crawley, UK',
     description: (
       <span>
         Worked on a <span className="font-bold">Shopfloor/MES Platform</span>.
@@ -43,7 +43,7 @@ export const experiencesData = [
   },
   {
     title: 'C++ Programmer',
-    company: 'Inspired Entertainment',
+    company: 'Inspired Entertainment, Burton-on-Trent, UK',
     description: (
       <span>
         Developed casino games using <span className="font-bold">C++</span>{' '}
@@ -62,7 +62,7 @@ export const experiencesData = [
   },
   {
     title: 'Game Programmer - Internship',
-    company: 'Black Cat Entertainment',
+    company: 'Black Cat Entertainment, Leamington Spa, UK',
     description: (
       <span>
         Worked on a platformer game using{' '}
