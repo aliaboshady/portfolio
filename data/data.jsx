@@ -184,7 +184,7 @@ export const projectsData = [
 export const skillsData = {
   languages: {
     color: 'red',
-    skills: ['C', 'C++', 'C#', 'Python', 'Java', 'JavaScript'],
+    skills: ['C', 'C++', 'C#', 'Python', 'Java', 'JavaScript', 'Typescript'],
   },
   front_end: {
     color: 'blue',
@@ -193,6 +193,8 @@ export const skillsData = {
       'CSS',
       'JavaScript',
       'React',
+      'Next',
+      'Typescript',
       'Tailwind',
       'Redux',
       'Framer-Motion',
@@ -201,7 +203,7 @@ export const skillsData = {
 
   back_end: {
     color: 'green',
-    skills: ['SQL Server', 'Supabase'],
+    skills: ['SQL Server', 'NodeJS', 'ExpressJS', 'Supabase'],
   },
   artificial_intelligence: {
     color: 'gray',
@@ -232,6 +234,6 @@ export const skillsData = {
   },
   app_dev: {
     color: 'purple',
-    skills: ['Dart', 'Flutter'],
+    skills: ['Dart', 'Flutter', 'React Native', 'Expo'],
   },
 };
