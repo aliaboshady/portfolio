@@ -203,7 +203,7 @@ export const skillsData = {
 
   back_end: {
     color: 'green',
-    skills: ['SQL Server', 'NodeJS', 'ExpressJS', 'Supabase'],
+    skills: ['NodeJS', 'ExpressJS', 'SQL Server', 'MongoDB', 'Supabase'],
   },
   artificial_intelligence: {
     color: 'gray',
